@@ -1,37 +1,46 @@
 /*全体のスタイル（CSSリセット用）*/
-*{
+* {
     /* padding,borderが要素の中に入る */
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-ul{
+
+ul {
     /* リストの・を消す */
     list-style: none;
-    margin:0;
+    margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p,span,button{
-    margin:0;
-    padding:0;
-    font-weight:normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 }
 
-a{
-    color:inherit; 
+a {
+    color: inherit;
     /* 文字の下の線を消す */
-    text-decoration:none;   
+    text-decoration: none;
 }
 
-body{
-    color:#555;
-    margin:0;
-    line-height:1.6;
+body {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* header */
-header{
+header {
     width: 100%;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     padding: 0 20px;
     color: #fff;
     background-color: inherit;
@@ -40,99 +49,106 @@ header{
 }
 
 .header-logo {
-    padding:20px 0;
+    padding: 20px 0;
     font-weight: bold;
     font-size: 18px;
 }
 
-.header-nav ul{
-    display:flex;
+.header-nav ul {
+    display: flex;
     padding: 22px 0;
 }
 
-.header-nav ul li{
-    margin-left:55px;
-    font-size:15px;
+.header-nav ul li {
+    margin-left: 55px;
+    font-size: 15px;
 }
 
-#first-v{
+#first-v {
     height: 770px;
     background-image: url("../img/bg1.png");
     background-size: cover;
 }
 
-.first-v-wrap{
+.first-v-wrap {
     padding: 285px 0 255px;
-        margin: 0 auto;
-        width: 250px;
-        text-align: center;
-    }
-    
-.first-v-title{
-    margin-bottom:150px;
-    font-weight:bold;
-    font-size:27px;
-    }
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+}
 
-.first-v-title::after{
-        display:block;
-        content:"";
-        width:100px;
-        border-top:1px solid #fff;
-        margin:20px auto 0;
-    }
+.first-v-title {
+    margin-bottom: 150px;
+    font-weight: bold;
+    font-size: 27px;
+}
 
-    .first-v-btn {
-        width:200px;
-        height: 50px;
-        text-align: center;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        background: linear-gradient(-90deg,#283C86,#06BEB6);
-        box-shadow: 0ppx 5px #070707;
-        font-weight: bold;
-        font-size: 15px;
-        color: #FFF;
-        margin-top: 100px;
-    }
-    
-    .fa-door-open {
-        margin-right: 4px;
-    }
+.first-v-title::after {
+    display: block;
+    content: "";
+    width: 100px;
+    border-top: 1px solid #fff;
+    margin: 20px auto 0;
+}
 
-.entry-wrap{
+.first-v-btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(-90deg, #283C86, #06BEB6);
+    box-shadow: 0ppx 5px #070707;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFF;
+    margin-top: 100px;
+}
+
+.fa-door-open {
+    margin-right: 4px;
+}
+
+.entry-wrap {
     padding: 175px 0;
-        width: 400px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    
-.entry-title{
-        margin-bottom: 55px;
-        font-weight: bold;
-        font-size: 18px;
-        color: #191919;
-    }
-    
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.entry-title {
+    margin-bottom: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #191919;
+}
+
 .entry-btn {
-        width:320px;
-    }
-
-    /* footer */
-footer{
-    background-color:#191919;
-    height:50px;
+    width: 320px;
 }
 
-.company-info{
-    /* 文字を横方向に中央揃え */
-    text-align:center;
-    line-height:50px;
-    font-weight:bold;
+/* footer */
+footer {
+    background-color: #191919;
+    height: 50px;
+}
+
+.company-info {
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
     font-size: 12px;
-    color:#FFF;
+    color: #FFF;
 }
 
+.inner {
+    /* about-itemの横幅と間隔の合計 */
+    width: 1100px;
+    /* titleまでの幅 */
+    padding: 90px 0;
+    /* innerが画面の中央に */
+    margin: 0 auto;
 
-    
+
+}
