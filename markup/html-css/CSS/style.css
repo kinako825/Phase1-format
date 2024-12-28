@@ -81,6 +81,7 @@ header {
     margin-bottom: 150px;
     font-weight: bold;
     font-size: 27px;
+    color: #fff;
 }
 
 .first-v-title::after {
@@ -142,13 +143,147 @@ footer {
     color: #FFF;
 }
 
-.inner {
+
+
+ /* 共通パート */
+ .title {
+    display: flex;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    /* 文字をイタリック体に */
+    font-style: italic;
+    text-align: center;
+ }
+
+ .title-b{
+    /* Aboutの部分だけを太文字に */
+    font-weight: bold;
+ }
+ 
+ .title::before {
+    content: "";     /* 追加 */
+    display: inline-block;
+    width: 30px;
+    margin-right: 20px;
+    border-top: 1px solid #191919;
+    content: "";     /* 追加 */
+}
+
+ .title::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    margin-left: 20px;
+    border-top:1px solid #191919;
+    content: "";
+ }
+
+ .inner {
     /* about-itemの横幅と間隔の合計 */
     width: 1100px;
     /* titleまでの幅 */
     padding: 90px 0;
     /* innerが画面の中央に */
     margin: 0 auto;
-
-
 }
+
+ /* aboutのスタイル */
+ #about{
+    color: #191919;
+    background-color: #f8f8f8;
+
+ }
+
+ .about-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 子要素を中央揃え (追加)*/
+    align-items: center;   /* 追加　*/
+    gap: 100px; /* 横と縦の間隔を100pxに設定 (追加)*/
+    margin-top: 60px;
+ }
+
+ .about-item{
+    width: 300px;
+    height: 315px;
+    padding: 35px 50px 50px;
+    text-align: center;
+    background-color: #fff;
+ }
+
+ .about-item:nth-child(n+4):nth-child(-n+6){
+    /* 4から6個目のabout-itemにmarginをつける */
+    margin-top: 47px;
+ }
+
+ .about-title_title{
+    font-size: 22px;
+ }
+
+ .about-item_img img{
+    width: 122px;
+    height: 122px;
+    margin: 20px 0 25px;
+ }
+
+ .about-item_desc{
+    font-size: 13px;
+ }
+
+
+  /* newsのスタイル */
+  #c{
+    color: #191919;
+    background-color: #f8f8f8;
+
+ }
+
+ .news-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 子要素を中央揃え (追加)*/
+    align-items: center;   /* 追加　*/
+    gap: 100px; /* 横と縦の間隔を100pxに設定 (追加)*/
+    margin-top: 60px;
+ }
+
+ .news-item{
+    width: 336px;
+    height: 400px;
+    padding: 35px 50px 50px;
+    text-align: left;
+    background-color: #fff;
+ }
+
+ .news-item:nth-child(n+4):nth-child(-n+6){
+    /* 4から6個目のabout-itemにmarginをつける */
+    margin-top: 47px;
+ }
+
+ .news-title_date{
+    font-size: 22px;
+ }
+
+ .news-title_title{
+    font-size: 14px;
+ }
+
+ .news-item_img {
+    width: 336px;
+    height: 207px;
+    margin: 20px 0 25px;
+ }
+
+ .news-item_img img{
+    width: 336px;
+    height: 207px;
+    margin: 20px 0 25px;
+ }
+
+ .news-item_desc{
+    font-size: 12px;
+ }
+
+
