@@ -158,7 +158,6 @@ footer {
  }
 
  .title-b{
-    /* Aboutの部分だけを太文字に */
     font-weight: bold;
  }
  
@@ -193,7 +192,6 @@ footer {
  #about{
     color: #191919;
     background-color: #f8f8f8;
-
  }
 
  .about-wrap{
@@ -234,56 +232,72 @@ footer {
 
 
   /* newsのスタイル */
-  #c{
-    color: #191919;
-    background-color: #f8f8f8;
 
+ #news{    
+    width:100%;
+    background-image: url("../img/bg2.png");
+    background-size: cover;
  }
+
+ .white-title{
+    /* width:150px; これがあると左によってしまう*/
+    color:#FFF;
+}
+
+.white-title::before{
+    content:"";
+    display: block;
+    width:30px;
+    margin-right:20px;
+    border-top:1px solid #fff;
+
+}
+
+.white-title::after{
+    content:"";
+    display: block;
+    width:30px;
+    margin-left:20px;
+    border-top:1px solid #fff;
+}
 
  .news-wrap{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* 子要素を中央揃え (追加)*/
-    align-items: center;   /* 追加　*/
-    gap: 100px; /* 横と縦の間隔を100pxに設定 (追加)*/
-    margin-top: 60px;
+    justify-content: space-between;
  }
 
  .news-item{
     width: 336px;
-    height: 400px;
-    padding: 35px 50px 50px;
-    text-align: left;
-    background-color: #fff;
+    margin-top: 60px;
+ }
+ 
+ .news-img {
+    width: 100%;
+    height: 207px;
  }
 
- .news-item:nth-child(n+4):nth-child(-n+6){
-    /* 4から6個目のabout-itemにmarginをつける */
-    margin-top: 47px;
+ .news-img img{
+    width: 100%;
+    height: 100%;
  }
 
- .news-title_date{
-    font-size: 22px;
+ .news-content{
+    padding:20px;
+    background-color:#fff;
+}
+
+.news-date{
+    font-size: 10px;
+    font-weight: bold;
  }
 
- .news-title_title{
+ .news-title{
+    padding:8px 0 20px;
+    font-weight: bold;
     font-size: 14px;
- }
+}
 
- .news-item_img {
-    width: 336px;
-    height: 207px;
-    margin: 20px 0 25px;
- }
-
- .news-item_img img{
-    width: 336px;
-    height: 207px;
-    margin: 20px 0 25px;
- }
-
- .news-item_desc{
+.news-txt{
     font-size: 12px;
- }
-
+}
 
