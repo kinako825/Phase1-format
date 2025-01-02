@@ -11,3 +11,30 @@ body{
 /* 変数 */
 $sky:#06BEB6;
 $navy:#283C86;
+
+.title{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom:60px;
+
+    &--b{
+        font-weight: bold;
+    }
+
+    &::before{
+        display:inline-block;
+        content:"";
+        width:3rem;
+        border-top:1px solid #191919;
+        margin-right:2rem;
+    }
+
+    &::after{
+        @extend ::before;
+        margin-right:0;
+        margin-left:2rem;
+    }
+}
