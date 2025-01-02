@@ -1,0 +1,33 @@
+header{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+    color:#fff;
+     // first-vの基準の相対値を指定できるように
+     position:absolute;
+     // 一番上に表示させる
+     z-index:20;
+     
+
+    nav{
+    width:45%;
+        ul{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            // 12px=1.rem
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.hd-logo{
+    //18px=1.8rem
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.ham{
+    display:none;
+}
