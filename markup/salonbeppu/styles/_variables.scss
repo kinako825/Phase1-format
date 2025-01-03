@@ -1,0 +1,47 @@
+// break point
+$bp-xl: 1282px;
+$bp-mdl: 1077px;
+$bp-md: 953px;
+$bp-tb: 910px;
+
+// setting
+@mixin breakPoint($media-width) {
+    @if $media-width==xl {
+        @media only screen and (max-width: $bp-xl) {
+        @content;
+        }
+    }
+
+    @else if $media-width==mdl {
+        @media only screen and (max-width: $bp-mdl) {
+        @content;
+        }
+    }
+
+    @else if $media-width==md {
+        @media only screen and (max-width: $bp-md) {
+        @content;
+        }
+    }
+
+    @else if $media-width==tb {
+        @media only screen and (max-width: $bp-tb) {
+        @content;
+        }
+    }
+
+    @else {
+        @media only screen and (max-width: $media-width) {
+        @content;
+        }
+    }
+}
+
+/*== color ====================*/
+$txt_gray: #707070;
+$txt_lightGray: #7070704D;
+$txt_secondGray: #00000038;
+$txt_black: #000000;
+$txt_white: #FFFFFF;
+$background_lightGray: #A193861F;
+$background_brown: #A1938689;

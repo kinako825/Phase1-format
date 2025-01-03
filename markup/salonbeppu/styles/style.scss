@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*========================================
+    style.scss
+========================================*/
+
+// Setting
+@import 'reset';
+@import 'variables';
+
+// Base
+@import 'common';
+@import 'component';
+
+// page
+@import 'index';
