@@ -26,3 +26,15 @@ console.log("今日の朝ごはんは" + breakfast + "でした。")
 
 const breakfast1 = "納豆ご飯"
 console.log(`今日の朝ごはんは${breakfast1}でした。`)
+
+const days = ['日', '月', '火', '水', '木', '金', '土']
+
+const num = Math.random() //0.0～1.0の数字をランダムにつくる
+
+if (num >= 0.5) {
+    console.log('大きめ')
+} else {
+    console.log('小さめ')
+}
+
+console.log(`数: ${num}`)
