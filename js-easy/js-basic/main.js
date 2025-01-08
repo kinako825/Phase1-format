@@ -38,3 +38,29 @@ if (num >= 0.5) {
 }
 
 console.log(`数: ${num}`)
+
+const score = Math.random() * 100 // 0.0〜100.0の間の数値をランダムに作る
+
+console.log(`点数: ${score}`)
+
+if (score >= 90) {
+    console.log('秀')
+} else if (score >= 75) {
+    console.log('優')
+} else if (score >= 60) {
+    console.log('良')
+} else if (score >= 30) {
+    console.log('可')
+} else {
+    console.log('不可')
+}
+
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+// let s = 2
+// while (s < 100000) {
+//     console.log(s)
+//     s = s * s
+// }
