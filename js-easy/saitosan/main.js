@@ -1,10 +1,5 @@
 
 
-// const setBtn = funnction() 
-// {
-//     const hoge = Math.random() * 10;
-//     console.log('hoge');
-// };
 
 const setBtn = function () {
     const hoge = Math.random() * 10;
@@ -14,3 +9,9 @@ const setBtn = function () {
         alert('斎藤さんだぞ');
     }
 };
+
+//三項演算子を使用
+// const setBtn = function () {
+//     const hoge = Math.random() * 10;
+//     hoge < 5 ? alert('斎藤さんだぞ') : alert('ぺっぺぺー');
+// };
