@@ -28,7 +28,7 @@
 
 
 //チャレンジ問題
-let i = 0; //この0を画面に表示させる方法は？
+let i = 0;
 const rewriteNum = document.getElementById('rewriteNum');
 rewriteNum, innerHTML = i;
 
