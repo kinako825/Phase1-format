@@ -1,19 +1,32 @@
 
 
-const button = document.getElementById('diceBtn');
+const startBtn = document.getElementById('diceBtn');
 const body = document.querySelector('body');
-
 const dice = document.createElement('img');
-
-body.appendChild(dice);
 dice.style.width = '100px';
 dice.style.height = '100px';
 
+
 let diceNum = './img/saikoro1.png';
-
-const ramdom = function () {
-
-
-}
-
 dice.setAttribute('src', diceNum);
+body.appendChild(dice);
+
+startBtn.addEventListener('click', function () {
+    let timer = setInterval('random()', 100);
+    setTimeout(function () {
+        clearInterval(timer);
+    }, 3000);
+});
+
+const random = function () {
+    diceNum = `./img/saikoro${Math.floor(Math.random() * 6 + 1)}.png`;
+    dice.setAttribute('src', diceNum);
+};
+
+
+
+
+
+
+
+
