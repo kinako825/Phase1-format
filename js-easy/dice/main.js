@@ -24,7 +24,21 @@ const random = function () {
 };
 
 
-
+// 追加チャレンジ問題
+// const player1Btn = document.getElementById('player1Btn');
+// const player2Btn = document.getElementById('player2Btn');
+// const result = document.getElementById('result');
+// const setPlayer1dice = document.getElementById('setPlayer1dice');
+// const setPlayer2dice = document.getElementById('setPlayer2dice');
+// setPlayer1dice.setAttribute('src', `./img/saikoro1.png`);
+// setPlayer2dice.setAttribute('src', `./img/saikoro1.png`);
+// const func1 = () => {
+//     player1Btn.disabled = true;
+//     result.textContent = '???';
+//     player1Timer = setInterval(() => {
+//         player1Num = Math.floor(Math.random() * 6 + 1);
+//         setPlayer1dice.setAttribute('src', `./img/saikoro${player1Num}.png`);
+//     }, 100);
 
 
 
