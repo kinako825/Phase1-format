@@ -1,12 +1,14 @@
 
 
 const SampleForm = document.getElementById('sampleForm');
-const TextCounter = docment.getElementById('textCounter');
-let count = 0;
+const TextCounter = document.getElementById('textCounter');
+
 
 SampleForm.addEventListener('keyup', function () {
-    count++;
-    console.log(count);
-    TextCounter.setAttribute(p, count);
+    const length = SampleForm.value.length;
+    let mozisu = length;
+    console.log(400 - mozisu);
+    TextCounter.innerText = mozisu;
+
 });
 
