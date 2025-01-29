@@ -2,17 +2,32 @@
 
 
 const addBtn = document.querySelector('.add-btn');
+
 const ul = document.querySelector('.lists');
-const list = document.createElement('li');
-let todoText;
+
+
 
 
 
 addBtn.addEventListener('click', function () {
     const textArea = document.getElementById('add-area');
-    todoText = textArea;
-    console.log(todoText.value);
-    // ul.appendChild(list);
+    let todoText = textArea.value;
+    const li = document.createElement('li');
+    li.textContent = todoText;
+
+    const doneBtn = document.createElement('buttun');
+    doneBtn.textContent = "完了";
+    doneBtn.classList.add("done-btn");
+
+    doneBtn.addEventListener('click', function () {
+        li.remove();
+    });
+
+    ul.appendChild(li);
+    li.appendChild(doneBtn);
+
+    textArea.value = "";
+
 
 });
 
