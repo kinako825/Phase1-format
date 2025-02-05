@@ -7,10 +7,10 @@ document.body.appendChild(mozi);
 function countdown() {
     let eventDate = moment("2112-09-03T00:00:00");
     let now = moment();
-    // console.log(now.format("YYYY-MM-DD HH:mm:ss"));
+
     let remainingTime = moment.duration(eventDate.diff(now));
 
-    let days = remainingTime.days();
+    let days = Math.floor(remainingTime.asDays());
     let hours = remainingTime.hours();
     let minutes = remainingTime.minutes();
     let seconds = remainingTime.seconds();
