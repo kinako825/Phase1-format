@@ -15,5 +15,14 @@ function generateRandomNumber() {
 }
 
 numCheck.addEventListener("click", function () {
-    let
+    let answerNum = document.getElementById("answerNum").value;
+
+    if (!isValidNumber(answerNum)) {
+        alert("同じ数を2回使ってはいけません");
+        return;
+    }
+
+    challengeCount++;
+    // let { eat, bite } = 
+
 })
