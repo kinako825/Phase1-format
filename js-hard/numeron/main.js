@@ -15,6 +15,7 @@ function generateRandomNumber() {
             digits.push(num);
         }
     }
+    console.log(digits);
     return digits.join("");
 }
 
@@ -33,12 +34,21 @@ function judgeEatBite(correct, guess) {
     return { eat, bite };
 }
 
-// 3桁の異なる数字かチェックする関数
+// 3桁の異なる数字かチェックする
 function isValidNumber(num) {
     num = String(num);
     return num.length === 3 && new Set(num).size === 3;
 }
 
+//ゲームのリセット処理
+function resetGame() {
+    challengeCount = 0;  // 回数をリセット
+    playerNumber = generateRandomNumber();  // 新しいランダムな数字を生成
+    remainTurn.innerText = `(${challengeCount}/${maxchallengeCount})`;  // 回数表示をリセット
+
+    // ボタンを再度有効化
+    numCheck.disabled = false;
+}
 
 
 
@@ -60,12 +70,20 @@ numCheck.addEventListener("click", function () {
 
     // 正解のチェック
     if (eat === 3) {
-        remainTurn.innerText = `正解！ ${playerNumber} でした！`;
+        alert(`正解！ ${playerNumber} でした！`);
         numCheck.disabled = true;
-    } else if (challengeCount >= maxchallengeCount) {
-        remainTurn.innerText = `残念！正解は ${playerNumber} でした`;
-        remainTurn.disabled = true;
+        resetGame();
+        return;
+
     }
+
+    if (challengeCount >= maxchallengeCount) {
+        alert(`残念！正解は ${playerNumber} でした`);
+        resetGame();
+        return;
+    }
+
+    remainTurn.innerText = `(${challengeCount}/${maxchallengeCount})`;
 
 });
 
